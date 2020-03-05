@@ -40,13 +40,15 @@
         </div>
 
 
-        <form action="" method="post">
-            <div class="campo">
-                <label for="name">nome do jogador</label>
-                <input type="text" name="nomedojogador" id="nome">
+        <form class="form_cadastro" action="" method="post">
 
                 <div class="campo">
-                    <label for="nick">nome do jogador</label>
+                    <label for="name">nome do jogador</label>
+                    <input type="text" name="nomedojogador" id="nome">
+                </div>
+
+                <div class="campo">
+                    <label for="nick">nick do jogador</label>
                     <input type="text" name="nickdojogador" id="nick">
                 </div>
 
@@ -57,7 +59,7 @@
 
                 <div class="campo">
                     <label for="senha">senha</label>
-                    <input type="password" name="senha" id="email">
+                    <input type="password" name="senha" id="senha">
                 </div>
 
                 <div class="campo">
@@ -67,7 +69,7 @@
 
                 <div class="campo">
                     <label for="nascimento">nascimento</label>
-                    <input type="date" name="nascimento" id="nascimento">
+                    <input type="date" name="nascimento" id="nascimento" max="2020-03-05" min="1900-01-01">
                 </div>
 
                 <div class="campo">
@@ -86,7 +88,7 @@
 
                     <input type="radio" name="sexo" value="F" id="Feminino">
                     <label for="Feminino">Feminino</label>
-                    
+
                     <input type="radio" name="sexo" value="O" id="Outro">
                     <label for="Outro">Outro</label>
 
@@ -94,16 +96,15 @@
                     <label for="NA">Prefiro não dizer</label>
                 </fieldset>
 
-                <div class="campo">
-                    <input type="checkout" name="check" id="check">
+                <div class="campo termos">
+                    <input type="checkbox" name="check" id="check">
                     <label for="check">
                         Declaro que li e aceito os termos de uso desse site.
                     </label>
                 </div>
 
-                <button type="submit">Cadastrar</button>
+                <button type="submit" class="btn gradient">Cadastrar</button>
 
-            </div>
         </form>
         </div>
 
