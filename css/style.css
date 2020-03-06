@@ -312,6 +312,13 @@ fieldset label{
     margin-top: 2em;
     cursor: pointer;
 }
+
+.cabecalho .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    margin-left: 2em;
+    display: none;
+}
 @media screen and (max-width: 1200px){
     .campea{
         right: 0%;
@@ -341,7 +348,7 @@ fieldset label{
         margin-left: 30px;
     }
     .ao_vivo{
-        padding: 0px 5px;
+        padding: 5.3em 5px;
         width: 50%;
         flex-wrap: wrap;
         justify-content: center;
@@ -376,7 +383,37 @@ fieldset label{
     .mob_logo_sociais img{
         max-width: 180px;
     }
-
-    
 }/* Fim media max 768px */
 
+@media screen and (max-width: 460px){
+    .cabecalho .fa-bars{
+        display: block;
+    }
+    .cabecalho div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 2em;
+    }
+    #menu{
+        position: absolute;
+        top: 72px;
+        background-color: #1E1C21;
+        width: 100%;
+        display: none;
+    }
+    .cabecalho ul{
+        flex-direction: column;
+        height: 250px;
+    }
+    .cabecalho ul a{
+        padding: 0.5em 80% 1em 0,5em;
+        margin: 0.1em 0;
+        margin-left: 2em;
+     }
+     /* Ocultar a Campeã no mobile */
+    .campea{
+        display: none;
+    }
+}
