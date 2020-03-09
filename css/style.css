@@ -453,4 +453,17 @@ fieldset label{
     .content{
         flex-direction: column;
     }
+    footer .container{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    footer h6{
+        text-align: start;
+    }
+    .sociais{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-evenly;
+    }
 }
