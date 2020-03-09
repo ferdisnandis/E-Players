@@ -354,3 +354,43 @@ fieldset label{
         margin-left: 30px;
     }
 }/* Fim media max 768px */
+
+@media screen and (max-width: 460px) {
+    .cabecalho .fa-bars{
+        display: block;
+    }
+    .cabecalho div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 2em;
+    }
+    .cabecalho nav{
+        position: absolute;
+        top:73px;
+        background-color: red;
+        width: 100%;
+    }
+    footer .container{
+        padding: 0;
+    }
+    footer h5{
+        padding-bottom: 0;
+    }
+    footer .sociais{
+        padding: 0.5em 1px;
+
+    }
+    .logo_sociais{
+    width:128px;
+    height:212px;
+    }
+    .elementos{
+        margin-top: 130px;
+        width: 100%;
+    }
+    .elementos img{
+        width: 150px;
+        height: auto;
+    }
